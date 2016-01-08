@@ -4,7 +4,9 @@
   "description": "A simple new-line delimited JSON protocol with upgrades.",
   "main": "lib/frame-protocol.js",
   "scripts": {
-    "test": "node test/test-frame-protocol.js"
+    "lint": "standard",
+    "unit": "node test/test-frame-protocol.js",
+    "test": "npm run unit && npm run lint"
   },
   "repository": "github.com/sonnyp/frame-protocol",
   "keywords": [
